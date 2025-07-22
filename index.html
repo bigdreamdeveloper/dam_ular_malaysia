@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dam Ular 🇲🇾 - Nasi Lemak Edition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>🐍 Dam Ular: Nasi Lemak Edition 🇲🇾</h1>
+
+    <div class="setup">
+      <label for="playerToken">Pilih Token Anda:</label>
+      <select id="playerToken">
+        <option value="🍳">🍳 Nasi Lemak</option>
+        <option value="🐔">🐔 Ayam Goreng</option>
+        <option value="🧋">🧋 Teh Tarik</option>
+        <option value="🥥">🥥 Kuih Lapis</option>
+        <option value="🥚">🥚 Telur Rebus</option>
+      </select>
+      <button id="startBtn">Mula Game</button>
+    </div>
+
+    <div id="gameArea" style="display: none;">
+      <div id="board" class="board"></div>
+      <div class="controls">
+        <button id="rollBtn">🎲 Roll Dadu</button>
+        <div id="message">Klik roll untuk mula!</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

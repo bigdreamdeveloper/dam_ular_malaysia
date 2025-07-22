@@ -1,0 +1,75 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background-color: #fff8e1;
+  margin: 0;
+  padding: 0;
+}
+
+.game-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2e7d32;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 2px;
+  margin: 20px auto;
+  width: 320px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #f1f8e9;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.player, .bot {
+  position: absolute;
+  font-size: 18px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.cell.blue {
+  background-color: #bbdefb;
+}
+.cell.green {
+  background-color: #c8e6c9;
+}
+.cell.red {
+  background-color: #ffcdd2;
+}
